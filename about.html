@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        #subscribeAlert {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1050; 
+            transition: opacity 0.5s ease;
+        }
+    </style>
+    <title>About Us</title>
+</head>
+<body>
+
+<header class="bg-light">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+        <a href="/index.html" class="d-flex align-items-center">
+            <img src="assets/images/logo.png" alt="Logo" style="height: 50px;">
+        </a>
+        <nav class="nav">
+            <a class="nav-link text-dark" href="/index.html">Home</a>
+            <a class="nav-link text-dark" href="/about.html">About</a>
+            <a class="nav-link text-dark" href="/contact.html">Contact</a>
+            <a class="nav-link text-dark" href="/subscribe.html">Subscribe</a>
+        </nav>
+    </div>
+</header>
+
+<div class="bg-light py-5">
+    <div class="container text-center">
+        <h1 class="fw-bold">About Us</h1>
+        <p class="lead">We are a community of outdoor enthusiasts committed to sharing experiences and knowledge about outdoor adventures.</p>
+    </div>
+</div>
+
+<!-- Our Mission -->
+<div class="bg-light py-3">
+    <div class="container text-center">
+        <h2 class="fw-bold">Our Mission</h2>
+        <p class="text-justify">
+            Our mission is to inspire individuals of all ages to forge a deeper connection with nature by creating unforgettable outdoor experiences that foster personal growth and well-being. We are dedicated to promoting an active lifestyle through diverse activities such as hiking, camping, and various outdoor sports. Our belief is rooted in the idea that adventures in the great outdoors not only enrich our lives by providing joy and a sense of freedom but also play a crucial role in building a better, more connected community. By encouraging exploration and appreciation of the natural world, we aim to cultivate a sense of stewardship for our environment, ensuring that future generations can enjoy the same beautiful landscapes and outdoor adventures that we cherish today.
+        </p>
+    </div>
+</div>
+
+<!-- Meet the Team -->
+<div class="bg-light py-3">
+    <div class="container">
+        <h2 class="fw-bold text-center">Meet the Team</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm">
+                    <img src="assets/images/team1.jpg" class="card-img-top" alt="Team Member 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Alexandra Smith</h5>
+                        <p class="card-text">Founder & CEO</p>
+                        <p class="text-muted">Nature lover and adventurer with over 10 years of experience in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm">
+                    <img src="assets/images/team2.jpg" class="card-img-top" alt="Team Member 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Johnson</h5>
+                        <p class="card-text">Head of Product Development</p>
+                        <p class="text-muted">Expert in outdoor gear and user experience design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm">
+                    <img src="assets/images/team3.jpg" class="card-img-top" alt="Team Member 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sofia Williams</h5>
+                        <p class="card-text">Community Manager</p>
+                        <p class="text-muted">Community advocate ready to help members find new adventures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="py-5" style="background-color: #d8d8d8;">
+    <div class="container text-center">
+        <h2 class="fw-bold">Join Our Community</h2>
+        <p>Get the latest updates, guides, and tips for your next adventure. Sign up now!</p>
+        
+        <div id="subscribeAlert" class="alert alert-success d-none" role="alert">
+            You have successfully subscribed!
+        </div>
+        <form class="d-flex justify-content-center mb-3" onsubmit="showAlert(event)">
+            <div class="me-2">
+                <input type="text" class="form-control" placeholder="First Name" required>
+            </div>
+            <div class="me-2">
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn btn-light">Subscribe</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Your go-to resource for all things hiking and outdoor adventures.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/index.html" class="text-white">Home</a></li>
+                    <li><a href="/about.html" class="text-white">About</a></li>
+                    <li><a href="/contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">© 2024 Lifestyle Hub. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybqQg9c8lS4mKQW5i5I5mQ5mLe0wl65w5KhjD0/6ZQOnq0In3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-dztl9c8Dh55+0x8nH9DGFsh4S1P1L18xjRLTB3d6c6V70hYk1+j2+yt8pJ/Er6/n" crossorigin="anonymous"></script>
+<script>
+    function showAlert(event) {
+        event.preventDefault(); 
+        var alertBox = document.getElementById('subscribeAlert');
+        alertBox.classList.remove('d-none'); 
+        alertBox.style.opacity = '1'; 
+        setTimeout(function() {
+            alertBox.style.opacity = '0'; 
+            setTimeout(function() {
+                alertBox.classList.add('d-none'); 
+            }, 500);
+        }, 3000); 
+    }
+</script>
+</body>
+</html>
